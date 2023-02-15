@@ -7,7 +7,7 @@ import video from "../resources/videos/turning_pages_bible.mp4"
 function HeroSection() {
   return (
     <div className={'hero-container'}>
-        <video autoPlay loop muted>
+        <video autoPlay loop muted playsInline>
           <source src={video} type={"video/mp4"}/>
         </video>
 
