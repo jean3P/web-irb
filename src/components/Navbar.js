@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import './Navbar.css';
 import './Button'
+import {Button} from "./Button";
 
 function Navbar(){
   const [click, setClick] = useState(false);
@@ -42,10 +43,11 @@ function Navbar(){
               <li className={'nav-item'}>
                 <Link to={"/schedule"} className={"nav-links"} onClick={closeMobileMenu}>News</Link>
               </li>
-              <li className={'nav-item'}>
-                <Link to={"/contactUs"} className={"nav-links"} onClick={closeMobileMenu}>Contact us</Link>
-              </li>
+              {/*<li className={'nav-item'}>*/}
+              {/*  <Link to={"/contactUs"} className={"nav-links"} onClick={closeMobileMenu}>Contact us</Link>*/}
+              {/*</li>*/}
             </ul>
+            {button && <Button buttonStyle='btn--outline'>Contact us</Button>}
           </div>
         </nav>
       </>
