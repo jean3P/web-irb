@@ -16,7 +16,7 @@ function HeroSection() {
       <div className='hero-btns'>
         <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>Coffee & Word</Button>
         <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large' onClick={console.log('hey')}>
-          Youtube<i className='far fa-play-circle'/>
+          Sermons<i className='far fa-play-circle'/>
         </Button>
       </div>
     </div>
