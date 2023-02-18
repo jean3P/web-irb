@@ -2,7 +2,9 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from './components/pages/Home'
-import HeroSection from "./components/HeroSection";
+import AboutUs from "./components/pages/AboutUs";
+import Believe from "./components/pages/Believe";
+import ContactUs from "./components/pages/ContactUs";
 
 function App() {
   return (
@@ -12,6 +14,9 @@ function App() {
         {/*<HeroSection/>*/}
         <Routes>
           <Route path='/' exact element={<Home/>}/>
+          <Route path={"/aboutUs"} exact element={<AboutUs/>}/>
+          <Route path={"/believe"} exact element={<Believe/>}/>
+          <Route path={"/contactUs"} exact element={<ContactUs/>}/>
         </Routes>
       </Router>
     </>

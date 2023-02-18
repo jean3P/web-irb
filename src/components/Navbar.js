@@ -41,13 +41,13 @@ function Navbar(){
                 <Link to={"/aboutUs"} className={"nav-links"} onClick={closeMobileMenu}>About us</Link>
               </li>
               <li className={'nav-item'}>
-                <Link to={"/schedule"} className={"nav-links"} onClick={closeMobileMenu}>News</Link>
+                <Link to={"/believe"} className={"nav-links"} onClick={closeMobileMenu}>What we believe?</Link>
               </li>
-              {/*<li className={'nav-item'}>*/}
-              {/*  <Link to={"/contactUs"} className={"nav-links"} onClick={closeMobileMenu}>Contact us</Link>*/}
-              {/*</li>*/}
+              <li>
+                <Link to={"/contactUs"} className={"nav-links-mobile"} onClick={closeMobileMenu}>CONTACT US</Link>
+              </li>
             </ul>
-            {button && <Button buttonStyle='btn--outline'>Contact us</Button>}
+            {button && <Button buttonStyle='btn--outline'>CONTACT US</Button>}
           </div>
         </nav>
       </>
